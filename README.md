@@ -47,6 +47,18 @@ Jest documentation:
    * Lisa coverage info
    * Lisa testide jooksuaja info
 
+### Ülesanne 1 tulemused (`npm test`)
+* Testide jooksuaeg: **10.881 s**
+* Coverage kokkuvõte:
+
+```
+-------------------------------|---------|----------|---------|---------|
+File                           | % Stmts | % Branch | % Funcs | % Lines |
+-------------------------------|---------|----------|---------|---------|
+All files                      |     100 |      100 |     100 |     100 |
+-------------------------------|---------|----------|---------|---------|
+```
+
 ## Ülesanne 2: Mocked API testid
 * Mocki emaili validatsioon kasutades `jest.mock()`
 * Kirjuta samad testid `app.mock.test.js` faili
