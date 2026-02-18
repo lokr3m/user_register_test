@@ -6,7 +6,7 @@ const validateEmail = require('./validation/validateEmail')
 
 const app = createApp(validateUsername, validatePassword, validateEmail)
 const validUser = {
-    username: 'Username',
+    username: 'ValidUser123',
     password: 'Password123',
     email: 'student@example.com'
 }
@@ -29,6 +29,10 @@ describe('given incorrect or missing username and password', () => {
         {
             name: 'password is missing uppercase letter',
             payload: { ...validUser, password: 'password123' }
+        },
+        {
+            name: 'username contains invalid characters',
+            payload: { ...validUser, username: 'Invalid@User' }
         },
         {
             name: 'email format is invalid',

@@ -48,7 +48,7 @@ Jest documentation:
    * Lisa testide jooksuaja info
 
 ### Ülesanne 1 tulemused (`npm test`)
-* Testide jooksuaeg: **10.881 s**
+* Testide jooksuaeg: **12.917 s**
 * Coverage kokkuvõte:
 
 ```
