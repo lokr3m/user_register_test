@@ -1,3 +1,11 @@
+jest.mock('./validation/validateEmail', () => {
+    return jest.fn((email) => {
+        if (!email || typeof email !== 'string') return false
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i
+        return re.test(email)
+    })
+})
+
 const createApp = require('./app')
 const request = require('supertest')
 const validateUsername = require('./validation/validateUsername')
